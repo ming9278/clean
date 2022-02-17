@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+	<link rel="stylesheet" href="css/HOME.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dae9bfeb74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	  
+	  
+<!------------------------------------------------------NAV------------------------------------------->
+	  
+	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+       <a class="navbar-brand" href="#"><img src="images/LOGO-100.jpg" alt=""></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#">主頁 <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                服務選項
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">鍾點/家務助理</a>
+                    <a class="dropdown-item" href="#banner-2">裝修後清潔</a>
+	  				<a class="dropdown-item" href="#banner-3">除甲醛</a>
+					<a class="dropdown-item" href="#banner-4">辦公室清潔</a>
+                </div>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#about">關於我們</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">成為幫手</a>
+             </li>
+          </ul>
+          <div class="login-box">
+			<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#loginModal">登入</button>		
+         	<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#registerModal">註冊</button>		
+		  </div>
+       </div>
+    </nav>
+<!------------------------------------------------------popup------------------------------------------->
+	  <!-- Modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">會員登入</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <form>
+			  <div class="form-group">
+				  <input type="email" class="account form-control" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				  <input type="password" class="password form-control" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+				  <input type="checkbox" class="remember"><span>記住我的密碼</span>
+			  </div>
+			  <button type="button" class="btn btn-info">登入</button>	
+		  </form>
+      
+      </div>
+      <div class="modal-footer">
+		  <div class="signup">
+			  <span>尚未成為會員</span>
+			  <a href="#" type="button" class="member">立即加入</a>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 						<!-- Modal sigin-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">成為會員</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <form>
+			  <div class="form-group">
+				  <input type="email" class="account form-control" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				  <input type="password" class="password form-control" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+				  <input type="checkbox" class="remember"><span>記住我的密碼</span>
+			  </div>
+			  <button type="button" class="btn btn-info">登入</button>	
+		  </form>
+      </div>
+      <div class="modal-footer">
+		  <div class="signup">
+			  <span>尚未成為會員</span>
+			  <a href="#" type="button" class="member">立即加入</a>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------BANNER------------------------------------------->
+<span id="banner"></span>
+<section id="intro">
+		<div class="jumbotron">		
+		  <div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h1>尋找幫手 ?</h1>
+						<p class="leed">選擇適合自己的家務助理/鐘點服務</p>
+						<input type="button" class="planbutton" value="單次服服">
+						<input type="button" class="planbutton" value="每月一次">
+						<input type="button" class="planbutton" value="兩星期一次">
+		  <input type="button" class="planbutton" value="每星期一次">
+					</div>				
+				</div>
+			</div>
+		</div>
+</section>
+<!---------------------------------------plan--------------------------------------------------------------------------------->
+<section id="plan">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="planbox">
+					<h2>單次清潔服務</h2>
+					<h4>$ 128 / <span>小時起</span></h4>
+					<li>每次最少３小時</li>
+					<li>專業客戶支援</li>
+					<li>配對專業的家務助理/鐘點</li>
+					<div class="bottom">
+						<input type="button" class="booking" value="立即預約">
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="planbox">
+					<h2>套餐A</h2>
+					<h4>$ 125 / <span>小時起</span></h4>
+					<li>每次最少３小時</li>
+					<li>專業客戶支援</li>
+					<li>簡單快捷訂單管理功能</li>
+					<li>無限次轉換家務助理</li>
+					<li>優先選用同一位家務助理</li>
+					<div class="bottom">
+						<input type="button" class="booking" value="立即預約">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="planbox">
+					<h2>單次清潔服務</h2>
+					<h4>$ 128 / <span>小時起</span></h4>
+					<li>每次最少３小時</li>
+					<li>專業客戶支援</li>
+					<li>配對專業的家務助理/鐘點</li>
+					<li>簡單快捷訂單管理功能</li>
+					<li>無限次轉換家務助理</li>
+					<li>優先選用同一位家務助理</li>
+					<li>價錢經濟</li>
+					<div class="bottom">
+						<input type="button" class="booking" value="立即預約">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="planbox">
+					<h2>單次清潔服務</h2>
+					<h4>$ 128 / <span>小時起</span></h4>
+					<li>每次最少３小時</li>
+					<li>專業客戶支援</li>
+					<li>配對專業的家務助理/鐘點</li>
+					<li>簡單快捷訂單管理功能</li>
+					<li>無限次轉換家務助理;</li>
+					<li>優先選用同一位家務助理</li>
+					<li>價錢更優惠</li>
+					<div class="bottom">
+					<a href=""><input type="button" class="booking" value="立即預約"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------------服務介紹------------------------------------------------------>	
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div class="col col-lg-3">
+			<h4>鐘點/家務助理服務介紹</h4>
+		</div>
+	</div>
+</div>
+<section id="present">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1"><img src="images/living room.jpeg" class="img-fluid" alt="...">
+					
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>客廳/飯廳</h2>
+					<li>吸塵及清潔地板</li>	
+					<li>清潔內窗玻璃及窗台</li>
+					<li>清潔家具</li>
+					<li>清潔所有門及門框灰塵</li>
+					<li>清潔空調表面及過濾器</li>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center flex-wrap-reverse">
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>廚房</h2>
+					<li>清潔櫥櫃、廚具及家電</li>	
+					<li>清潔及消毒水嘈</li>
+					<li>清潔通風扇和設備表面</li>
+					<li>清洗地板及牆身</li>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/living room.jpeg" class="img-fluid" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/living room.jpeg" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>臥室</h2>
+					<li>清潔所有衣櫃表面</li>	
+					<li>清潔窗台</li>
+					<li>清潔地板及吸塵</li>
+					<li>清潔臥室灰塵</li>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center flex-wrap-reverse">
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>浴室</h2>
+					<li>清潔所有固定裝置</li>	
+					<li>清潔消毒浴缸</li>
+					<li>清潔消毒廁所</li>
+					<li>清洗地板及牆身</li>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/living room.jpeg" class="img-fluid" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/living room.jpeg" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>其他幫到手服務(可選)</h2>
+					<li>吉屋 / 裝修後清潔及入伙後清潔</li>	
+					<li>除甲荃</li>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------------裝修後清潔banner------------------------------------------------------>	
+<span id="banner-2"></span>
+<section id="furnish">
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1>裝修後清潔</h1>		
+					<p class="leed">新屋入伙 ?</p>
+					<p class="leed">裝修痕跡難以去除 ?</p>
+					<h2>幫到手 幫到你</h2>
+					<input type="button" class="planbutton" value="立即預約">
+				</div>				
+			</div>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------------裝修後清潔服務介紹------------------------------------------------------>
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div class="col col-lg-3">
+			<h4>裝修後清潔服務介紹</h4>
+		</div>
+	</div>
+</div>
+<section id="present-furnish">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/furnish.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>裝修後清潔</h2>
+					<li>吸塵及清潔地板</li>	
+					<li>清潔內窗玻璃及窗台</li>
+					<li>清潔家具</li>
+					<li>清潔所有門及門框灰塵</li>
+					<li>清潔空調表面及過濾器</li>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+<!----------------------------------------------------除甲醛Banner------------------------------------------------->
+<span id="banner-3"></span>
+<section id="Formaldehyde">
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1>除甲醛</h1>		
+					<p class="leed">新屋入伙 ?</p>
+					<p class="leed">裝修痕跡難以去除 ?</p>
+					<h2>幫到手 幫到你</h2>
+					<input type="button" class="planbutton" value="立即預約">
+				</div>				
+			</div>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------------除甲醛服務介紹------------------------------------------------------>		
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col col-lg-3">
+				<h4>除甲醛服務介紹</h4>
+			</div>
+		</div>
+	</div>
+<section id="present-Formaldehyde">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/Formaldehyde.jpg" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>除甲醛</h2>
+					<li>吸塵及清潔地板</li>	
+					<li>清潔內窗玻璃及窗台</li>
+					<li>清潔家具</li>
+					<li>清潔所有門及門框灰塵</li>
+					<li>清潔空調表面及過濾器</li>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+<!-----------------------------------------------辨公室清潔Banner----------------------------------------------->
+<span id="banner-4"></span>
+<section id="office">
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1>尋找幫手 ?</h1>
+					<p class="leed">選擇適合自己的家務助理/鐘點服務</p>
+					<input type="button" class="planbutton" value="單次服服">
+					<input type="button" class="planbutton" value="每月一次">
+					<input type="button" class="planbutton" value="兩星期一次">
+					<input type="button" class="planbutton" value="每星期一次">
+				</div>				
+			</div>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------------辨公室清潔服務介紹------------------------------------------------------>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col col-lg-3">
+				<h4>辨公室清潔服務介紹</h4>
+			</div>
+		</div>
+	</div>
+<section id="present-office">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-5">
+				<div class="left1">
+					<img src="images/Formaldehyde.jpg" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-5">
+				<div class="right1">
+					<h2>辨公室清潔</h2>
+					<li>吸塵及清潔地板</li>	
+					<li>清潔內窗玻璃及窗台</li>
+					<li>清潔家具</li>
+					<li>清潔所有門及門框灰塵</li>
+					<li>清潔空調表面及過濾器</li>
+				</div>
+			</div>
+		</div>	
+	</div>	
+</section>
+<!----------------------------------------------------關於我們-------------------------------------------------->
+<span id="about"></span>
+<section id="aboutus">
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-md-6">
+				<h2>關於幫到手</h2>
+				<p>幫到手就是當大家有需要幫手,
+				我們樂意第一時間幫手,
+				我們以幫到手為每一日的目標,
+				希望透過專業服務和特定框架,
+				以方便快捷的方式解決大家的煩惱。
+				幫到手運用每一份力量去便利大家的生活,		
+				從而得到改變各和社會的認同。
+				</p>
+				<h2>我們的承諾</h2>
+				<p>
+				幫到手致力運用現今科技和資源在社區提供專業服務,幫助需要我們幫到手服務的客人,
+				從而減輕大家生活上的煩惱及為我們香港人忙碌的生活中,騰空更多休息時間。
+				</p>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

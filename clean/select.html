@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+	<link rel="stylesheet" href="css/select.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dae9bfeb74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	  
+	  
+<!------------------------------------------------------NAV------------------------------------------->
+	  
+	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+       <a class="navbar-brand" href="#"><img src="images/LOGO-100.jpg" alt=""></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#">主頁 <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                服務選項
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">鍾點/家務助理</a>
+                    <a class="dropdown-item" href="#banner-2">裝修後清潔</a>
+	  				<a class="dropdown-item" href="#banner-3">除甲醛</a>
+					<a class="dropdown-item" href="#banner-4">辦公室清潔</a>
+                </div>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#about">關於我們</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">成為幫手</a>
+             </li>
+          </ul>
+          <div class="login-box">
+			<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#loginModal">登入</button>		
+         	<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#registerModal">註冊</button>		
+		  </div>
+       </div>
+    </nav>
+<!------------------------------------------------------popup------------------------------------------->
+	  <!-- Modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">會員登入</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <form>
+			  <div class="form-group">
+				  <input type="email" class="account form-control" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				  <input type="password" class="password form-control" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+				  <input type="checkbox" class="remember"><span>記住我的密碼</span>
+			  </div>
+			  <button type="button" class="btn btn-info">登入</button>	
+		  </form>
+      
+      </div>
+      <div class="modal-footer">
+		  <div class="signup">
+			  <span>尚未成為會員</span>
+			  <a href="#" type="button" class="member">立即加入</a>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 						<!-- Modal sigin-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">成為會員</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <form>
+			  <div class="form-group">
+				  <input type="email" class="account form-control" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				  <input type="password" class="password form-control" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+				  <input type="checkbox" class="remember"><span>記住我的密碼</span>
+			  </div>
+			  <button type="button" class="btn btn-info">登入</button>	
+		  </form>
+      </div>
+      <div class="modal-footer">
+		  <div class="signup">
+			  <span>尚未成為會員</span>
+			  <a href="#" type="button" class="member">立即加入</a>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+	  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

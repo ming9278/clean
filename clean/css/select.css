@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding-top: 100px;
+}
+/*****************************************************大圍樣式******************************************************************/
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li {
+	font-family: 'Open Sans', sans-serif;
+}
+.img-fluid{ /****************rwd img style***************/
+	max-width: 100%;
+	height: auto;
+}
+
+/**********************************************************************nav******************************************************/
+header nav img {
+	width: 100px;
+}
+.navbar {
+	height: auto;
+}
+.container .navbar {
+	margin: 0px auto;
+	height: auto;
+	background-color: white
+}
+.navbar li{
+	padding: 0px 10px;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.navbar .btn {
+	border-radius: 8px;
+	height: auto;
+	width: 100px;
+	background-color:#0085FE;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 2px 0px;
+}
+.login-box {
+	height: auto;
+	width: auto;
+}
+
+/**************************************************popup**************************************************************************/
+.modal-header h5 {
+	position: absolute;
+	top:7%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.modal-footer  a {
+	font-size: 1.3rem;
+}
+.modal-body form .btn {
+	width: 100%;
+	font-size: 25px;
+	background-color: #4E91CF;
+}

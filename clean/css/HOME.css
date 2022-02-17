@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding-top: 100px;
+}
+/*****************************************************大圍樣式******************************************************************/
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li {
+	font-family: 'Open Sans', sans-serif;
+}
+.img-fluid{ /****************rwd img style***************/
+	max-width: 100%;
+	height: auto;
+}
+
+/**********************************************************************nav******************************************************/
+header nav img {
+	width: 100px;
+}
+.navbar {
+	height: auto;
+}
+.container .navbar {
+	margin: 0px auto;
+	height: auto;
+	background-color: white
+}
+.navbar li{
+	padding: 0px 10px;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.navbar .btn {
+	border-radius: 8px;
+	height: auto;
+	width: 100px;
+	background-color:#0085FE;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 2px 0px;
+}
+.login-box {
+	height: auto;
+	width: auto;
+}
+
+/**************************************************popup**************************************************************************/
+.modal-header h5 {
+	position: absolute;
+	top:7%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.modal-footer  a {
+	font-size: 1.3rem;
+}
+.modal-body form .btn {
+	width: 100%;
+	font-size: 25px;
+	background-color: #4E91CF;
+}
+/**************************************************Banner**************************************************************************/
+#intro .jumbotron {
+	height: 80vh;
+	background-color: aqua
+}
+#intro h1 {
+	font-size: 49px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000000;
+	padding-top: 15px;
+}
+#intro .container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#intro .col-lg-4 {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 7px;
+	height: 300px;
+	text-align: center;
+}
+.col-md-4 p {
+	color: #000000;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+#intro input {
+	width: 210px;
+	height: 36px;
+	border-radius: 8px;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: solid;
+	border-width: 2px;
+}
+#intro input:hover {
+	background-color: #938F8F;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+#intro {
+	margin-bottom: 20px
+}
+/**************************************************plan***********************************/
+#plan .container {
+	width: 100%;
+	height: 100%;
+	background-color: #EDE3E3;
+	margin-bottom: 10px;
+}
+#plan h2 {
+	padding-top: 15px;
+	text-align: center;
+}
+#plan h4 {
+	text-align: center;	
+	margin-bottom: 20px;
+}
+#plan span {
+	font-size: 15px;
+	font-weight: bold;
+}
+#plan li {
+	list-style: none;
+	line-height: 30px;
+	padding-left: 17px;
+}
+#plan input {
+	width: 110px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 12px;
+}
+#plan input:hover {
+	color: #6D876D;
+}
+.planbox {
+	border-style: solid;
+	border-color: #878787;
+	border-radius: 8px;
+	background-color: #EDD8D8;
+	position: relative;
+	height: 380px;
+	width: 95%;
+	margin-right:10px;
+}
+#plan .bottom {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+/*******************************************************服務介紹***************************************************/
+#present .container {
+	background-color: #FFF4C0;
+}
+#present .row {
+	padding-top: 15px;
+}
+#present .right1 {
+	margin: 20px 60px 0px 0px;
+}
+#present h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#present li {
+	line-height: 35px;
+	font-size: 19px;
+	list-style: none;
+	padding-left: 12%;
+}
+/*******************************************************裝修後清潔Banner***************************************************/
+#furnish .jumbotron {
+	height: 80vh;
+	background-color: aqua;
+	margin-bottom: 10px
+}
+#furnish h1 {
+	font-size: 49px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000000;
+	padding-top: 15px;
+}
+#furnish .container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#furnish .col-md-4 {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 7px;
+	height: 300px;
+	text-align: center;
+}
+#furnish .col-md-4 p {
+	color: #000000;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+#furnish input {
+	width: 210px;
+	height: 36px;
+	border-radius: 8px;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: solid;
+	border-width: 2px;
+}
+#furnish input:hover {
+	background-color: #938F8F;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+
+/*******************************************************裝修後清潔服務介紹***************************************************/
+#present-furnish .container {
+	background-color: #FFF4C0;
+}
+#present-furnish .row {
+	padding-top: 15px;
+}
+#present-furnish .right1 {
+	margin: 20px 60px 0px 0px;
+}
+#present-furnish h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#present-furnish li {
+	line-height: 35px;
+	font-size: 19px;
+	list-style: none;
+	padding-left: 12%;
+}
+/*******************************************************除甲醛Banner***************************************************/
+#Formaldehyde .jumbotron {
+	height: 80vh;
+	background-color: aqua;
+
+}
+#Formaldehyde h1 {
+	font-size: 49px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000000;
+	padding-top: 15px;
+}
+#Formaldehyde .container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#Formaldehyde .col-md-4 {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 7px;
+	height: 300px;
+	text-align: center;
+}
+#Formaldehyde .col-md-4 p {
+	color: #000000;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+#Formaldehyde input {
+	width: 210px;
+	height: 36px;
+	border-radius: 8px;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: solid;
+	border-width: 2px;
+}
+#Formaldehyde input:hover {
+	background-color: #938F8F;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+#Formaldehyde {
+	margin-bottom: 20px;
+}
+/*******************************************************除甲醛服務介紹***************************************************/
+#present-Formaldehyde .container {
+	background-color: #FFF4C0;
+}
+#present-Formaldehyde .row {
+	padding-top: 15px;
+}
+#present-Formaldehyde .right1 {
+	margin: 20px 60px 0px 0px;
+}
+#present-Formaldehyde h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#present-Formaldehyde li {
+	line-height: 35px;
+	font-size: 19px;
+	list-style: none;
+	padding-left: 12%;
+}
+/*******************************************************辨公室清潔Banner***************************************************/
+#office .jumbotron {
+	height: 80vh;
+	background-color: aqua;
+
+}
+#office h1 {
+	font-size: 49px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000000;
+	padding-top: 15px;
+}
+#office .container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#office .col-md-4 {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 7px;
+	height: 300px;
+	text-align: center;
+}
+.col-md-4 p {
+	color: #000000;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+#office input {
+	width: 210px;
+	height: 36px;
+	border-radius: 8px;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: solid;
+	border-width: 2px;
+}
+#office input:hover {
+	background-color: #938F8F;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+#office {
+	margin-bottom: 20px
+}
+/*******************************************************辨公室清潔服務介紹***************************************************/
+#present-office .container {
+	background-color: #FFF4C0;
+}
+#present-office .row {
+	padding-top: 15px;
+}
+#present-office .right1 {
+	margin: 20px 60px 0px 0px;
+}
+#present-office h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#present-office li {
+	line-height: 35px;
+	font-size: 19px;
+	list-style: none;
+	padding-left: 12%;
+}
+/*******************************************************ABOUTUS***************************************************/
+#aboutus .img-fluid {
+
+}
+#aboutus .col-md-6 {
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 7px;
+	height: auto;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+	margin : 40px 0 0;
+	padding: 0px 5px;
+}
+#aboutus .jumbotron {
+	height: 100%;
+	padding: 25px 10px 40px;
+	background-image:url("../images/sample.jpg") ;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
